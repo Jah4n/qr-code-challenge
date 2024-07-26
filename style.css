@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px -25px black;
+    z-index: 100;
+}
+
+img {
+    border-radius: 20px;
+    width: 100%;
+    scale: 105%;
+    transition: 400ms ease-in-out;
+    transition-delay: 750ms;
+}
+
+.image {
+    overflow: hidden;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.text {
+    font-size: 15px;
+    padding: 0 25px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    text-align: center;
+}
+
+.bold {
+    font-size: 25px;
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* --------------------------------------------------- */
+
+
+.main :not(:first-child) {
+    transition: 750ms ease;
+    z-index: 500;
+}
+
+.main:hover .textt {
+    opacity: 0;
+    margin-bottom: -41.75%;
+    transform: translateY(-100%);
+}
+
+.main:hover img {
+    scale: 130%;
+}
+
+.container {
+    border: solid 1px magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.scan {
+    position: absolute;
+    bottom: 350px;
+}
+
+h3 {
+    background-color: rgb(0, 140, 255);
+    padding: 10px 15px;
+    border-radius: 3000px;
+    color: aliceblue;
+    font-size: small;
+    font-weight: bolder;
+}
